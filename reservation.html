@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservation</title>
     <link rel="stylesheet" href="monfichier.css">
+    <script src="main.js"></script>
 </head>
 <body>
       <!-- section Reservation -->
@@ -13,15 +14,20 @@
         <h4 class="mini-titre">reservation</h4>
         <h2 class="titre">Remplissez ce formulaire pour faire une reservation</h2>
         <form action="">
-          <label for="">Entrer votre nom</label>
-          <input type="text">
-          <label for="">Votre Email</label>
-          <input type="text">
-          <label for="">Votre numéro de téléphone</label>
-          <input type="text">
+          <label for="name">Entrer votre nom</label>
+          <input type="text" name="" id="name">
+          <label for="Email">Votre Email</label>
+          <input type="email" name="" id="Email" placeholder="email@gmail">
+          <label for="Number">Votre numéro de téléphone</label>
+          <input type="number" name="" id="number" value="+">
           <label for="">Date de reservation</label>
-          <input type="date">
-         <a href="stock.html"> <input type="submit" value="Faire votre reservation" ></a>
+          <input type="date" name="" id="date">
+          
+          <label for="homme">Masculin <input type="radio" id="homme" name="genre" value="Masculin">
+          </label><br>
+          <label for="femme">Feminin <input type="radio" id="femme" name="genre" value="Feminin">
+          </label><br>
+         <a href="stock.html"><input type="" name="" id="submit" value="Faire votre reservation" ></a>
         </form>
       </section>
 </body>
